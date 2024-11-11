@@ -44,13 +44,13 @@
             btnEditar = new Button();
             btnEliminar = new Button();
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            label6 = new Label();
             pictureBox1 = new PictureBox();
+            label6 = new Label();
+            groupBox2 = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)dvDatos).BeginInit();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // txtPass
@@ -153,6 +153,7 @@
             // dvDatos
             // 
             dvDatos.AllowUserToOrderColumns = true;
+            dvDatos.BackgroundColor = Color.LightGray;
             dvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvDatos.Location = new Point(382, 1);
             dvDatos.Margin = new Padding(3, 2, 3, 2);
@@ -207,16 +208,16 @@
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // groupBox2
+            // pictureBox1
             // 
-            groupBox2.BackColor = Color.DarkSeaGreen;
-            groupBox2.Controls.Add(btnEditar);
-            groupBox2.Controls.Add(btnEliminar);
-            groupBox2.Location = new Point(382, 241);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(740, 100);
-            groupBox2.TabIndex = 26;
-            groupBox2.TabStop = false;
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(6, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 81);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -229,34 +230,35 @@
             label6.Text = "EMPOWER";
             label6.Click += label6_Click;
             // 
-            // pictureBox1
+            // groupBox2
             // 
-            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(6, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(101, 81);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 23;
-            pictureBox1.TabStop = false;
+            groupBox2.BackColor = Color.LightGray;
+            groupBox2.Controls.Add(btnEditar);
+            groupBox2.Controls.Add(btnEliminar);
+            groupBox2.Location = new Point(382, 241);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(740, 100);
+            groupBox2.TabIndex = 26;
+            groupBox2.TabStop = false;
             // 
             // Administracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(1123, 338);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(dvDatos);
+            ForeColor = SystemColors.ControlText;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Administracion";
             Text = "Administracion";
             ((System.ComponentModel.ISupportInitialize)dvDatos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
