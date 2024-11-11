@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
             txtPass = new TextBox();
             label5 = new Label();
             btnGuardar = new Button();
@@ -44,14 +45,17 @@
             btnEliminar = new Button();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            label6 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dvDatos).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(115, 228);
+            txtPass.Location = new Point(109, 259);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(225, 23);
@@ -60,7 +64,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(33, 228);
+            label5.Location = new Point(27, 259);
             label5.Name = "label5";
             label5.Size = new Size(70, 15);
             label5.TabIndex = 20;
@@ -68,7 +72,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(14, 271);
+            btnGuardar.Location = new Point(8, 302);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(82, 22);
@@ -79,7 +83,7 @@
             // 
             // txtDir
             // 
-            txtDir.Location = new Point(115, 189);
+            txtDir.Location = new Point(109, 220);
             txtDir.Margin = new Padding(3, 2, 3, 2);
             txtDir.Name = "txtDir";
             txtDir.Size = new Size(225, 23);
@@ -88,7 +92,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(33, 189);
+            label4.Location = new Point(27, 220);
             label4.Name = "label4";
             label4.Size = new Size(57, 15);
             label4.TabIndex = 17;
@@ -96,7 +100,7 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(117, 145);
+            txtApellido.Location = new Point(111, 176);
             txtApellido.Margin = new Padding(3, 2, 3, 2);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(225, 23);
@@ -105,7 +109,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(35, 145);
+            label3.Location = new Point(29, 176);
             label3.Name = "label3";
             label3.Size = new Size(54, 15);
             label3.TabIndex = 15;
@@ -113,7 +117,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(117, 103);
+            txtNombre.Location = new Point(111, 134);
             txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(225, 23);
@@ -122,7 +126,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(35, 103);
+            label2.Location = new Point(29, 134);
             label2.Name = "label2";
             label2.Size = new Size(54, 15);
             label2.TabIndex = 13;
@@ -131,7 +135,7 @@
             // txtRut
             // 
             txtRut.Enabled = false;
-            txtRut.Location = new Point(117, 65);
+            txtRut.Location = new Point(111, 96);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
             txtRut.Size = new Size(225, 23);
@@ -140,7 +144,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(35, 65);
+            label1.Location = new Point(29, 96);
             label1.Name = "label1";
             label1.Size = new Size(28, 15);
             label1.TabIndex = 11;
@@ -182,7 +186,9 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.DarkOrange;
+            groupBox1.BackColor = Color.PapayaWhip;
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtApellido);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtRut);
@@ -203,7 +209,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = SystemColors.ControlDarkDark;
+            groupBox2.BackColor = Color.DarkSeaGreen;
             groupBox2.Controls.Add(btnEditar);
             groupBox2.Controls.Add(btnEliminar);
             groupBox2.Location = new Point(382, 241);
@@ -211,6 +217,28 @@
             groupBox2.Size = new Size(740, 100);
             groupBox2.TabIndex = 26;
             groupBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(113, 19);
+            label6.Name = "label6";
+            label6.Size = new Size(252, 45);
+            label6.TabIndex = 22;
+            label6.Text = "EMPOWER";
+            label6.Click += label6_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(6, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 81);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
             // 
             // Administracion
             // 
@@ -228,6 +256,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -249,5 +278,7 @@
         private Button btnEliminar;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private Label label6;
+        private PictureBox pictureBox1;
     }
 }

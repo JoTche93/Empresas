@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             txtRut = new TextBox();
             txtPass = new TextBox();
             label2 = new Label();
@@ -35,11 +36,13 @@
             label3 = new Label();
             btnAceptar = new Button();
             btnRegistrar = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtRut
             // 
-            txtRut.Location = new Point(117, 112);
+            txtRut.Location = new Point(124, 143);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
             txtRut.Size = new Size(180, 23);
@@ -47,7 +50,7 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(117, 150);
+            txtPass.Location = new Point(124, 181);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '*';
@@ -57,7 +60,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(36, 155);
+            label2.Location = new Point(43, 186);
             label2.Name = "label2";
             label2.Size = new Size(70, 15);
             label2.TabIndex = 6;
@@ -66,7 +69,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 117);
+            label1.Location = new Point(43, 148);
             label1.Name = "label1";
             label1.Size = new Size(28, 15);
             label1.TabIndex = 5;
@@ -76,7 +79,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            label3.Location = new Point(150, 55);
+            label3.Location = new Point(157, 86);
             label3.Name = "label3";
             label3.Size = new Size(110, 46);
             label3.TabIndex = 7;
@@ -84,7 +87,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(117, 193);
+            btnAceptar.Location = new Point(124, 224);
             btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(82, 22);
@@ -95,7 +98,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(205, 193);
+            btnRegistrar.Location = new Point(212, 224);
             btnRegistrar.Margin = new Padding(3, 2, 3, 2);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(82, 22);
@@ -104,12 +107,23 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(157, 33);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Coral;
+            BackColor = Color.PapayaWhip;
             ClientSize = new Size(405, 315);
+            Controls.Add(pictureBox1);
             Controls.Add(btnRegistrar);
             Controls.Add(btnAceptar);
             Controls.Add(label3);
@@ -122,6 +136,7 @@
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,5 +150,6 @@
         private Label label3;
         private Button btnAceptar;
         private Button btnRegistrar;
+        private PictureBox pictureBox1;
     }
 }
