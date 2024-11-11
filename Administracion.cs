@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using TestLogin.App_code;
+
+namespace TestLogin
+{
+    public partial class Administracion : Form
+    {
+        Conexion scn;
+        DataTable dtUsuario = new DataTable();
+        int indice = 0;
+        int rut = 0;
+        public Administracion()
+        {
+            InitializeComponent();
+            scn = new Conexion();
+            ObtenerListado(-1);
+        }
+
+        private void ObtenerListado(int rut)
+        {
+            dtUsuario.Clear();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Connection = scn.Con;
+                scn.Con.Open();
+                SqlDataAdapter usuario = new SqlDataAdapter();
+                usuario.SelectCommand = cmd;
+
+                #region Paso 2 Llamada a Procedimiento Almacenado
+                cmd.CommandText = "ListarUsuario";
+                cmd.CommandType = CommandType.StoredProcedure;
+                #endregion
+
+                #region Paso 3 Entrega de Parametros
+                SqlParameter parametro1 = cmd.Parameters.Add("@P_USU_RUT", SqlDbType.Int);
+                parametro1.Value = rut; ;
+                #endregion
+
+                #region Paso 4 Ejecutar Query
+                usuario.Fill(dtUsuario);
+                dvDatos.DataSource = dtUsuario;
+                #endregion
+                scn.Con.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rut > 0)
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    string[] rut2 = txtRut.Text.Split('-');
+
+                    cmd.Connection = scn.Con;
+                    scn.Con.Open();
+
+                    cmd.CommandText = "EditarUsuario";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parametro1 = cmd.Parameters.Add("@P_USU_RUT", SqlDbType.Int);
+                    parametro1.Value = int.Parse(rut2[0]);
+
+                    SqlParameter parametro2 = cmd.Parameters.Add("@P_USU_DV", SqlDbType.VarChar);
+                    parametro2.Value = rut2[1];
+
+                    SqlParameter parametro3 = cmd.Parameters.Add("@P_USU_NOMBRE", SqlDbType.VarChar);
+                    parametro3.Value = txtNombre.Text;
+
+                    SqlParameter parametro4 = cmd.Parameters.Add("@P_USU_APELLIDO", SqlDbType.VarChar);
+                    parametro4.Value = txtApellido.Text;
+
+                    SqlParameter parametro5 = cmd.Parameters.Add("@P_USU_DIRECCION", SqlDbType.VarChar);
+                    parametro5.Value = txtDir.Text;
+
+                    SqlParameter parametro6 = cmd.Parameters.Add("@P_USU_PASS", SqlDbType.VarChar);
+                    parametro6.Value = txtPass.Text;
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Modificado Exitosamente");
+
+                    scn.Con.Close();
+                    rut = 0;
+                    limpiar();
+                    ObtenerListado(-1);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (indice > -1)
+            {
+                DataRow datos = dtUsuario.Rows[indice];
+
+                rut = Convert.ToInt32(datos["USU_RUT"].ToString());
+                txtRut.Text = datos["USU_RUT"].ToString() + "-" + datos["USU_DV"].ToString();
+                txtNombre.Text = datos["USU_NOMBRE"].ToString();
+                txtApellido.Text = datos["USU_APELLIDO"].ToString();
+                txtDir.Text = datos["USU_DIRECCION"].ToString();
+                txtPass.Text = datos["USU_PASS"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("No ha seleccionado ninguna fila.");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (indice > -1)
+            {
+                DataRow datos = dtUsuario.Rows[indice];
+
+                rut = Convert.ToInt32(datos["USU_RUT"].ToString());
+
+                Eliminar(rut);
+            }
+            else
+            {
+                MessageBox.Show("No ha seleccionado ninguna fila.");
+            }
+        }
+
+        private void dvDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indice = e.RowIndex;
+        }
+        private void Eliminar(int rutUsu)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.Connection = scn.Con;
+            scn.Con.Open();
+
+            cmd.CommandText = "EliminarUsuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            #region Paso 3 Entrega de Parametros
+            SqlParameter parametro1 = cmd.Parameters.Add("@P_USU_RUT", SqlDbType.Int);
+            parametro1.Value = rutUsu; ;
+            #endregion
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Eliminado Exitosamente");
+
+            scn.Con.Close();
+            rut = 0;
+            ObtenerListado(-1);
+        }
+        private void limpiar()
+        {
+            txtRut.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtDir.Clear();
+            txtPass.Clear();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
