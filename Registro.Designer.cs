@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             label1 = new Label();
             txtRut = new TextBox();
             txtNombre = new TextBox();
@@ -39,20 +40,26 @@
             btnGuardar = new Button();
             txtPass = new TextBox();
             label5 = new Label();
+            groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(35, 46);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label1.Location = new Point(6, 25);
             label1.Name = "label1";
-            label1.Size = new Size(28, 15);
+            label1.Size = new Size(33, 17);
             label1.TabIndex = 0;
             label1.Text = "Rut:";
             // 
             // txtRut
             // 
-            txtRut.Location = new Point(117, 46);
+            txtRut.BackColor = SystemColors.Window;
+            txtRut.Location = new Point(88, 25);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
             txtRut.Size = new Size(225, 23);
@@ -60,7 +67,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(117, 84);
+            txtNombre.Location = new Point(88, 63);
             txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(225, 23);
@@ -69,15 +76,16 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(35, 84);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label2.Location = new Point(6, 63);
             label2.Name = "label2";
-            label2.Size = new Size(54, 15);
+            label2.Size = new Size(62, 17);
             label2.TabIndex = 2;
             label2.Text = "Nombre:";
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(117, 126);
+            txtApellido.Location = new Point(88, 105);
             txtApellido.Margin = new Padding(3, 2, 3, 2);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(225, 23);
@@ -86,15 +94,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(35, 126);
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label3.Location = new Point(6, 105);
             label3.Name = "label3";
-            label3.Size = new Size(54, 15);
+            label3.Size = new Size(64, 17);
             label3.TabIndex = 4;
             label3.Text = "Apellido:";
             // 
             // txtDir
             // 
-            txtDir.Location = new Point(115, 170);
+            txtDir.Location = new Point(86, 149);
             txtDir.Margin = new Padding(3, 2, 3, 2);
             txtDir.Name = "txtDir";
             txtDir.Size = new Size(225, 23);
@@ -103,15 +112,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(33, 170);
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label4.Location = new Point(4, 149);
             label4.Name = "label4";
-            label4.Size = new Size(57, 15);
+            label4.Size = new Size(66, 17);
             label4.TabIndex = 6;
             label4.Text = "Dirección";
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(115, 260);
+            btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnGuardar.Location = new Point(86, 239);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(82, 22);
@@ -122,7 +133,7 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(115, 209);
+            txtPass.Location = new Point(86, 188);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(225, 23);
@@ -131,33 +142,59 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(33, 209);
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label5.Location = new Point(4, 188);
             label5.Name = "label5";
-            label5.Size = new Size(70, 15);
+            label5.Size = new Size(81, 17);
             label5.TabIndex = 9;
             label5.Text = "Contraseña:";
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.NavajoWhite;
+            groupBox1.Controls.Add(txtPass);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtRut);
+            groupBox1.Controls.Add(btnGuardar);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(txtDir);
+            groupBox1.Controls.Add(txtNombre);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtApellido);
+            groupBox1.Location = new Point(-3, -4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(324, 294);
+            groupBox1.TabIndex = 11;
+            groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(509, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(111, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // Registro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(516, 399);
-            Controls.Add(txtPass);
-            Controls.Add(label5);
-            Controls.Add(btnGuardar);
-            Controls.Add(txtDir);
-            Controls.Add(label4);
-            Controls.Add(txtApellido);
-            Controls.Add(label3);
-            Controls.Add(txtNombre);
-            Controls.Add(label2);
-            Controls.Add(txtRut);
-            Controls.Add(label1);
+            BackColor = Color.PapayaWhip;
+            ClientSize = new Size(620, 287);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Registro";
             Text = "Form1";
+            Load += Registro_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -173,5 +210,7 @@
         private Button btnGuardar;
         private TextBox txtPass;
         private Label label5;
+        private GroupBox groupBox1;
+        private PictureBox pictureBox1;
     }
 }

@@ -59,5 +59,10 @@ namespace TestLogin
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
