@@ -60,37 +60,41 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label2.Location = new Point(43, 186);
             label2.Name = "label2";
-            label2.Size = new Size(70, 15);
+            label2.Size = new Size(81, 17);
             label2.TabIndex = 6;
             label2.Text = "Contraseña:";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label1.Location = new Point(43, 148);
             label1.Name = "label1";
-            label1.Size = new Size(28, 15);
+            label1.Size = new Size(33, 17);
             label1.TabIndex = 5;
             label1.Text = "Rut:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            label3.Font = new Font("Segoe UI Black", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(157, 86);
             label3.Name = "label3";
-            label3.Size = new Size(110, 46);
+            label3.Size = new Size(111, 45);
             label3.TabIndex = 7;
             label3.Text = "Login";
+            label3.Click += label3_Click;
             // 
             // btnAceptar
             // 
+            btnAceptar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAceptar.Location = new Point(124, 224);
             btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(82, 22);
+            btnAceptar.Size = new Size(82, 27);
             btnAceptar.TabIndex = 8;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -98,10 +102,11 @@
             // 
             // btnRegistrar
             // 
+            btnRegistrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnRegistrar.Location = new Point(212, 224);
             btnRegistrar.Margin = new Padding(3, 2, 3, 2);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(82, 22);
+            btnRegistrar.Size = new Size(82, 27);
             btnRegistrar.TabIndex = 9;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -112,7 +117,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(157, 33);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(111, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
