@@ -116,7 +116,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(270, 17);
+            pictureBox1.Location = new Point(313, 23);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(63, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -127,7 +127,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(12, 22);
+            label6.Location = new Point(55, 28);
             label6.Name = "label6";
             label6.Size = new Size(252, 45);
             label6.TabIndex = 23;

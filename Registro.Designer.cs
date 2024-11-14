@@ -41,16 +41,17 @@
             txtPass = new TextBox();
             label5 = new Label();
             groupBox1 = new GroupBox();
-            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            label6 = new Label();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label1.Location = new Point(6, 25);
+            label1.Location = new Point(13, 108);
             label1.Name = "label1";
             label1.Size = new Size(33, 17);
             label1.TabIndex = 0;
@@ -59,7 +60,7 @@
             // txtRut
             // 
             txtRut.BackColor = SystemColors.Window;
-            txtRut.Location = new Point(88, 25);
+            txtRut.Location = new Point(95, 108);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
             txtRut.Size = new Size(225, 23);
@@ -67,7 +68,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(88, 63);
+            txtNombre.Location = new Point(95, 146);
             txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(225, 23);
@@ -77,7 +78,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(6, 63);
+            label2.Location = new Point(13, 146);
             label2.Name = "label2";
             label2.Size = new Size(62, 17);
             label2.TabIndex = 2;
@@ -85,7 +86,7 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(88, 105);
+            txtApellido.Location = new Point(95, 188);
             txtApellido.Margin = new Padding(3, 2, 3, 2);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(225, 23);
@@ -95,7 +96,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(6, 105);
+            label3.Location = new Point(13, 188);
             label3.Name = "label3";
             label3.Size = new Size(64, 17);
             label3.TabIndex = 4;
@@ -103,7 +104,7 @@
             // 
             // txtDir
             // 
-            txtDir.Location = new Point(86, 149);
+            txtDir.Location = new Point(93, 232);
             txtDir.Margin = new Padding(3, 2, 3, 2);
             txtDir.Name = "txtDir";
             txtDir.Size = new Size(225, 23);
@@ -113,7 +114,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(4, 149);
+            label4.Location = new Point(11, 232);
             label4.Name = "label4";
             label4.Size = new Size(66, 17);
             label4.TabIndex = 6;
@@ -122,7 +123,7 @@
             // btnGuardar
             // 
             btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            btnGuardar.Location = new Point(86, 239);
+            btnGuardar.Location = new Point(93, 322);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(82, 22);
@@ -133,7 +134,7 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(86, 188);
+            txtPass.Location = new Point(93, 271);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(225, 23);
@@ -143,7 +144,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label5.Location = new Point(4, 188);
+            label5.Location = new Point(11, 271);
             label5.Name = "label5";
             label5.Size = new Size(81, 17);
             label5.TabIndex = 9;
@@ -151,7 +152,9 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.NavajoWhite;
+            groupBox1.BackColor = Color.PapayaWhip;
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtPass);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label5);
@@ -163,29 +166,39 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtApellido);
-            groupBox1.Location = new Point(-3, -4);
+            groupBox1.Location = new Point(1, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(324, 294);
+            groupBox1.Size = new Size(620, 378);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(509, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(111, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
+            pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 11);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(101, 81);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(107, 19);
+            label6.Name = "label6";
+            label6.Size = new Size(252, 45);
+            label6.TabIndex = 24;
+            label6.Text = "EMPOWER";
             // 
             // Registro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PapayaWhip;
-            ClientSize = new Size(620, 287);
-            Controls.Add(pictureBox1);
+            BackColor = Color.Silver;
+            ClientSize = new Size(620, 378);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Registro";
@@ -193,7 +206,7 @@
             Load += Registro_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -211,6 +224,7 @@
         private TextBox txtPass;
         private Label label5;
         private GroupBox groupBox1;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label6;
     }
 }
