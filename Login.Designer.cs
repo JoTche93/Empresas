@@ -149,6 +149,7 @@
             Controls.Add(txtPass);
             Controls.Add(txtRut);
             ForeColor = SystemColors.ControlText;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Login";
