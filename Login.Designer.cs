@@ -37,6 +37,7 @@
             btnAceptar = new Button();
             btnRegistrar = new Button();
             pictureBox1 = new PictureBox();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -115,12 +116,22 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(157, 33);
+            pictureBox1.Location = new Point(270, 17);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(111, 50);
+            pictureBox1.Size = new Size(63, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(12, 22);
+            label6.Name = "label6";
+            label6.Size = new Size(252, 45);
+            label6.TabIndex = 23;
+            label6.Text = "EMPOWER";
             // 
             // Login
             // 
@@ -128,6 +139,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
             ClientSize = new Size(405, 315);
+            Controls.Add(label6);
             Controls.Add(pictureBox1);
             Controls.Add(btnRegistrar);
             Controls.Add(btnAceptar);
@@ -156,5 +168,6 @@
         private Button btnAceptar;
         private Button btnRegistrar;
         private PictureBox pictureBox1;
+        private Label label6;
     }
 }
