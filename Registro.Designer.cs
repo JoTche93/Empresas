@@ -198,7 +198,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
-            ClientSize = new Size(620, 378);
+            ClientSize = new Size(379, 378);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Registro";
