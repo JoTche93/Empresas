@@ -38,7 +38,11 @@
             btnRegistrar = new Button();
             pictureBox1 = new PictureBox();
             label6 = new Label();
+            panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtRut
@@ -116,9 +120,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(313, 23);
+            pictureBox1.Location = new Point(313, 41);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(63, 50);
+            pictureBox1.Size = new Size(77, 68);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -127,18 +131,38 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(55, 28);
+            label6.Location = new Point(55, 41);
             label6.Name = "label6";
             label6.Size = new Size(252, 45);
             label6.TabIndex = 23;
             label6.Text = "EMPOWER";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(409, 38);
+            panel1.TabIndex = 24;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(366, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(40, 38);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PapayaWhip;
+            BackColor = Color.CadetBlue;
             ClientSize = new Size(405, 315);
+            Controls.Add(panel1);
             Controls.Add(label6);
             Controls.Add(pictureBox1);
             Controls.Add(btnRegistrar);
@@ -152,9 +176,12 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
+            Opacity = 0.9D;
             Text = "Login";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,5 +197,7 @@
         private Button btnRegistrar;
         private PictureBox pictureBox1;
         private Label label6;
+        private Panel panel1;
+        private PictureBox pictureBox2;
     }
 }
