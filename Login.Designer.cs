@@ -38,16 +38,16 @@
             pictureBox1 = new PictureBox();
             label6 = new Label();
             panel1 = new Panel();
-            pictureBox2 = new PictureBox();
+            label5 = new Label();
             pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             label4 = new Label();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
@@ -152,16 +152,15 @@
             panel1.Size = new Size(429, 38);
             panel1.TabIndex = 24;
             // 
-            // pictureBox2
+            // label5
             // 
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(386, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 38);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(3, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 16);
+            label5.TabIndex = 27;
+            label5.Text = "Empower";
             // 
             // pictureBox3
             // 
@@ -172,6 +171,17 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 26;
             pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(386, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(40, 38);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -187,7 +197,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(84, 156);
+            pictureBox4.Location = new Point(75, 155);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(40, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -198,22 +208,12 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(84, 210);
+            pictureBox5.Location = new Point(75, 209);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(40, 38);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 28;
             pictureBox5.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 9);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 16);
-            label5.TabIndex = 27;
-            label5.Text = "Empower";
             // 
             // Login
             // 
@@ -237,14 +237,14 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
-            Opacity = 0.9D;
+            Opacity = 0.95D;
             Text = "Login";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);

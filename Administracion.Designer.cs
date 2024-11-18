@@ -44,13 +44,20 @@
             btnEditar = new Button();
             btnEliminar = new Button();
             groupBox1 = new GroupBox();
-            pictureBox1 = new PictureBox();
             label6 = new Label();
             groupBox2 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            label7 = new Label();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dvDatos).BeginInit();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtPass
@@ -64,18 +71,20 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label5.Location = new Point(27, 259);
             label5.Name = "label5";
-            label5.Size = new Size(70, 15);
+            label5.Size = new Size(81, 17);
             label5.TabIndex = 20;
             label5.Text = "Contraseña:";
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(8, 302);
+            btnGuardar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(23, 302);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(82, 22);
+            btnGuardar.Size = new Size(85, 29);
             btnGuardar.TabIndex = 19;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -92,9 +101,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label4.Location = new Point(27, 220);
             label4.Name = "label4";
-            label4.Size = new Size(57, 15);
+            label4.Size = new Size(66, 17);
             label4.TabIndex = 17;
             label4.Text = "Dirección";
             // 
@@ -109,9 +119,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label3.Location = new Point(29, 176);
             label3.Name = "label3";
-            label3.Size = new Size(54, 15);
+            label3.Size = new Size(64, 17);
             label3.TabIndex = 15;
             label3.Text = "Apellido:";
             // 
@@ -126,9 +137,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label2.Location = new Point(29, 134);
             label2.Name = "label2";
-            label2.Size = new Size(54, 15);
+            label2.Size = new Size(62, 17);
             label2.TabIndex = 13;
             label2.Text = "Nombre:";
             // 
@@ -144,9 +156,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             label1.Location = new Point(29, 96);
             label1.Name = "label1";
-            label1.Size = new Size(28, 15);
+            label1.Size = new Size(33, 17);
             label1.TabIndex = 11;
             label1.Text = "Rut:";
             // 
@@ -155,7 +168,7 @@
             dvDatos.AllowUserToOrderColumns = true;
             dvDatos.BackgroundColor = Color.LightGray;
             dvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvDatos.Location = new Point(382, 1);
+            dvDatos.Location = new Point(380, 42);
             dvDatos.Margin = new Padding(3, 2, 3, 2);
             dvDatos.Name = "dvDatos";
             dvDatos.RowHeadersWidth = 51;
@@ -165,10 +178,11 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(6, 46);
+            btnEditar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEditar.Location = new Point(30, 41);
             btnEditar.Margin = new Padding(3, 2, 3, 2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(82, 22);
+            btnEditar.Size = new Size(82, 29);
             btnEditar.TabIndex = 23;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -176,10 +190,11 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(102, 46);
+            btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEliminar.Location = new Point(133, 41);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(82, 22);
+            btnEliminar.Size = new Size(82, 29);
             btnEliminar.TabIndex = 24;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -187,7 +202,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.PapayaWhip;
+            groupBox1.BackColor = Color.DarkCyan;
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtApellido);
@@ -201,29 +216,18 @@
             groupBox1.Controls.Add(btnGuardar);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtDir);
-            groupBox1.Location = new Point(1, 1);
+            groupBox1.Location = new Point(-1, 42);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(375, 336);
             groupBox1.TabIndex = 25;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(6, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(101, 81);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 23;
-            pictureBox1.TabStop = false;
-            // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(113, 19);
+            label6.Location = new Point(13, 19);
             label6.Name = "label6";
             label6.Size = new Size(252, 45);
             label6.TabIndex = 22;
@@ -232,33 +236,91 @@
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = Color.LightGray;
+            groupBox2.BackColor = Color.DarkSlateGray;
             groupBox2.Controls.Add(btnEditar);
             groupBox2.Controls.Add(btnEliminar);
-            groupBox2.Location = new Point(382, 241);
+            groupBox2.Location = new Point(380, 282);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(740, 100);
+            groupBox2.Size = new Size(740, 96);
             groupBox2.TabIndex = 26;
             groupBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(271, 10);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(77, 68);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 27;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(-1, -1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1128, 38);
+            panel1.TabIndex = 27;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(3, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(67, 16);
+            label7.TabIndex = 27;
+            label7.Text = "Empower";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1039, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(40, 38);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 26;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1081, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(40, 38);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
             // 
             // Administracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(1123, 338);
+            BackColor = Color.CadetBlue;
+            ClientSize = new Size(1123, 386);
+            Controls.Add(panel1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(dvDatos);
             ForeColor = SystemColors.ControlText;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Administracion";
             Text = "Administracion";
             ((System.ComponentModel.ISupportInitialize)dvDatos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -282,5 +344,9 @@
         private GroupBox groupBox2;
         private Label label6;
         private PictureBox pictureBox1;
+        private Panel panel1;
+        private Label label7;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
     }
 }
