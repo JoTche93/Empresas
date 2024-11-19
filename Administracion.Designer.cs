@@ -45,16 +45,16 @@
             btnEliminar = new Button();
             groupBox1 = new GroupBox();
             label6 = new Label();
-            groupBox2 = new GroupBox();
             pictureBox1 = new PictureBox();
+            groupBox2 = new GroupBox();
             panel1 = new Panel();
             label7 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dvDatos).BeginInit();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -62,17 +62,19 @@
             // 
             // txtPass
             // 
+            txtPass.BackColor = Color.LightGray;
+            txtPass.BorderStyle = BorderStyle.None;
             txtPass.Location = new Point(109, 259);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(225, 23);
+            txtPass.Size = new Size(225, 16);
             txtPass.TabIndex = 21;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label5.Location = new Point(27, 259);
+            label5.Location = new Point(23, 259);
             label5.Name = "label5";
             label5.Size = new Size(81, 17);
             label5.TabIndex = 20;
@@ -80,6 +82,8 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.BackColor = Color.LightGray;
+            btnGuardar.FlatStyle = FlatStyle.Popup;
             btnGuardar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.Location = new Point(23, 302);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
@@ -87,40 +91,44 @@
             btnGuardar.Size = new Size(85, 29);
             btnGuardar.TabIndex = 19;
             btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // txtDir
             // 
-            txtDir.Location = new Point(109, 220);
+            txtDir.BackColor = Color.LightGray;
+            txtDir.BorderStyle = BorderStyle.None;
+            txtDir.Location = new Point(109, 219);
             txtDir.Margin = new Padding(3, 2, 3, 2);
             txtDir.Name = "txtDir";
-            txtDir.Size = new Size(225, 23);
+            txtDir.Size = new Size(225, 16);
             txtDir.TabIndex = 18;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(27, 220);
+            label4.Location = new Point(23, 217);
             label4.Name = "label4";
-            label4.Size = new Size(66, 17);
+            label4.Size = new Size(70, 17);
             label4.TabIndex = 17;
-            label4.Text = "Dirección";
+            label4.Text = "Dirección:";
             // 
             // txtApellido
             // 
+            txtApellido.BackColor = Color.LightGray;
+            txtApellido.BorderStyle = BorderStyle.None;
             txtApellido.Location = new Point(111, 176);
             txtApellido.Margin = new Padding(3, 2, 3, 2);
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(225, 23);
+            txtApellido.Size = new Size(225, 16);
             txtApellido.TabIndex = 16;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(29, 176);
+            label3.Location = new Point(23, 176);
             label3.Name = "label3";
             label3.Size = new Size(64, 17);
             label3.TabIndex = 15;
@@ -128,17 +136,19 @@
             // 
             // txtNombre
             // 
+            txtNombre.BackColor = Color.LightGray;
+            txtNombre.BorderStyle = BorderStyle.None;
             txtNombre.Location = new Point(111, 134);
             txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(225, 23);
+            txtNombre.Size = new Size(225, 16);
             txtNombre.TabIndex = 14;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(29, 134);
+            label2.Location = new Point(23, 134);
             label2.Name = "label2";
             label2.Size = new Size(62, 17);
             label2.TabIndex = 13;
@@ -146,18 +156,20 @@
             // 
             // txtRut
             // 
+            txtRut.BackColor = Color.LightGray;
+            txtRut.BorderStyle = BorderStyle.None;
             txtRut.Enabled = false;
             txtRut.Location = new Point(111, 96);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
-            txtRut.Size = new Size(225, 23);
+            txtRut.Size = new Size(225, 16);
             txtRut.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label1.Location = new Point(29, 96);
+            label1.Location = new Point(23, 95);
             label1.Name = "label1";
             label1.Size = new Size(33, 17);
             label1.TabIndex = 11;
@@ -178,6 +190,8 @@
             // 
             // btnEditar
             // 
+            btnEditar.BackColor = Color.LightGray;
+            btnEditar.FlatStyle = FlatStyle.Popup;
             btnEditar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnEditar.Location = new Point(30, 41);
             btnEditar.Margin = new Padding(3, 2, 3, 2);
@@ -185,11 +199,13 @@
             btnEditar.Size = new Size(82, 29);
             btnEditar.TabIndex = 23;
             btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = Color.LightGray;
+            btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnEliminar.Location = new Point(133, 41);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
@@ -197,13 +213,12 @@
             btnEliminar.Size = new Size(82, 29);
             btnEliminar.TabIndex = 24;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.DarkCyan;
-            groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtApellido);
             groupBox1.Controls.Add(label1);
@@ -216,6 +231,7 @@
             groupBox1.Controls.Add(btnGuardar);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtDir);
+            groupBox1.Controls.Add(pictureBox1);
             groupBox1.Location = new Point(-1, 42);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(375, 336);
@@ -234,6 +250,16 @@
             label6.Text = "EMPOWER";
             label6.Click += label6_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(226, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(108, 81);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 27;
+            pictureBox1.TabStop = false;
+            // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.DarkSlateGray;
@@ -244,16 +270,6 @@
             groupBox2.Size = new Size(740, 96);
             groupBox2.TabIndex = 26;
             groupBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(271, 10);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(77, 68);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 27;
-            pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -272,9 +288,9 @@
             label7.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.Location = new Point(3, 9);
             label7.Name = "label7";
-            label7.Size = new Size(67, 16);
+            label7.Size = new Size(166, 16);
             label7.TabIndex = 27;
-            label7.Text = "Empower";
+            label7.Text = "Empower Administración";
             // 
             // pictureBox3
             // 
@@ -315,8 +331,8 @@
             ((System.ComponentModel.ISupportInitialize)dvDatos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

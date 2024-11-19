@@ -41,6 +41,7 @@
             txtPass = new TextBox();
             label5 = new Label();
             groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
             label6 = new Label();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
@@ -48,6 +49,7 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -58,7 +60,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label1.Location = new Point(133, 114);
+            label1.Location = new Point(49, 16);
             label1.Name = "label1";
             label1.Size = new Size(33, 17);
             label1.TabIndex = 0;
@@ -66,26 +68,29 @@
             // 
             // txtRut
             // 
-            txtRut.BackColor = SystemColors.Window;
-            txtRut.Location = new Point(133, 133);
+            txtRut.BackColor = Color.LightGray;
+            txtRut.BorderStyle = BorderStyle.None;
+            txtRut.Location = new Point(49, 35);
             txtRut.Margin = new Padding(3, 2, 3, 2);
             txtRut.Name = "txtRut";
-            txtRut.Size = new Size(225, 23);
+            txtRut.Size = new Size(225, 18);
             txtRut.TabIndex = 1;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(133, 187);
+            txtNombre.BackColor = Color.LightGray;
+            txtNombre.BorderStyle = BorderStyle.None;
+            txtNombre.Location = new Point(49, 89);
             txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(225, 23);
+            txtNombre.Size = new Size(225, 18);
             txtNombre.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(133, 168);
+            label2.Location = new Point(49, 70);
             label2.Name = "label2";
             label2.Size = new Size(62, 17);
             label2.TabIndex = 2;
@@ -93,17 +98,19 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(133, 240);
+            txtApellido.BackColor = Color.LightGray;
+            txtApellido.BorderStyle = BorderStyle.None;
+            txtApellido.Location = new Point(49, 142);
             txtApellido.Margin = new Padding(3, 2, 3, 2);
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(225, 23);
+            txtApellido.Size = new Size(225, 18);
             txtApellido.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(131, 221);
+            label3.Location = new Point(47, 123);
             label3.Name = "label3";
             label3.Size = new Size(64, 17);
             label3.TabIndex = 4;
@@ -111,17 +118,19 @@
             // 
             // txtDir
             // 
-            txtDir.Location = new Point(133, 294);
+            txtDir.BackColor = Color.LightGray;
+            txtDir.BorderStyle = BorderStyle.None;
+            txtDir.Location = new Point(49, 196);
             txtDir.Margin = new Padding(3, 2, 3, 2);
             txtDir.Name = "txtDir";
-            txtDir.Size = new Size(225, 23);
+            txtDir.Size = new Size(225, 18);
             txtDir.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(129, 275);
+            label4.Location = new Point(45, 177);
             label4.Name = "label4";
             label4.Size = new Size(66, 17);
             label4.TabIndex = 6;
@@ -129,29 +138,33 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.BackColor = Color.LightGray;
+            btnGuardar.FlatStyle = FlatStyle.Popup;
             btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            btnGuardar.Location = new Point(131, 390);
+            btnGuardar.Location = new Point(47, 293);
             btnGuardar.Margin = new Padding(3, 2, 3, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(82, 22);
+            btnGuardar.Size = new Size(79, 25);
             btnGuardar.TabIndex = 8;
             btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(133, 347);
+            txtPass.BackColor = Color.LightGray;
+            txtPass.BorderStyle = BorderStyle.None;
+            txtPass.Location = new Point(49, 249);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(225, 23);
+            txtPass.Size = new Size(225, 18);
             txtPass.TabIndex = 10;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label5.Location = new Point(129, 328);
+            label5.Location = new Point(45, 230);
             label5.Name = "label5";
             label5.Size = new Size(81, 17);
             label5.TabIndex = 9;
@@ -160,30 +173,41 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.CadetBlue;
-            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(txtPass);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(txtRut);
-            groupBox1.Controls.Add(btnGuardar);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(txtDir);
-            groupBox1.Controls.Add(txtNombre);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtApellido);
+            groupBox1.Controls.Add(pictureBox1);
             groupBox1.Location = new Point(1, 27);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(490, 434);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(txtPass);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(txtRut);
+            groupBox2.Controls.Add(btnGuardar);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(txtDir);
+            groupBox2.Controls.Add(txtNombre);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(txtApellido);
+            groupBox2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox2.Location = new Point(91, 103);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(305, 325);
+            groupBox2.TabIndex = 26;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Registro Nuevo Usuario";
+            // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(93, 38);
+            label6.Location = new Point(91, 22);
             label6.Name = "label6";
             label6.Size = new Size(252, 45);
             label6.TabIndex = 24;
@@ -192,11 +216,11 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(339, 22);
+            pictureBox1.Location = new Point(301, -15);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(77, 68);
+            pictureBox1.Size = new Size(125, 100);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 26;
+            pictureBox1.TabIndex = 25;
             pictureBox1.TabStop = false;
             // 
             // panel1
@@ -216,9 +240,9 @@
             label7.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.Location = new Point(3, 9);
             label7.Name = "label7";
-            label7.Size = new Size(67, 16);
+            label7.Size = new Size(123, 16);
             label7.TabIndex = 27;
-            label7.Text = "Empower";
+            label7.Text = "Empower Registro";
             // 
             // pictureBox3
             // 
@@ -256,6 +280,8 @@
             Load += Registro_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -279,10 +305,11 @@
         private Label label5;
         private GroupBox groupBox1;
         private Label label6;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private Label label7;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private GroupBox groupBox2;
     }
 }
