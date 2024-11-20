@@ -74,9 +74,9 @@ namespace TestLogin
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            Registro registrar = new Registro();
-            registrar.Show();
-            this.Hide();
+            //Registro registrar = new Registro();
+           // registrar.Show();
+           // this.Hide();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -91,7 +91,9 @@ namespace TestLogin
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            Registro registrar = new Registro();
+            registrar.Show();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
