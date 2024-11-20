@@ -47,7 +47,7 @@
             label6 = new Label();
             pictureBox1 = new PictureBox();
             groupBox2 = new GroupBox();
-            panel1 = new Panel();
+            Barra = new Panel();
             label7 = new Label();
             btnMinimizar = new PictureBox();
             btnCerrar = new PictureBox();
@@ -55,7 +55,7 @@
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
-            panel1.SuspendLayout();
+            Barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
@@ -267,17 +267,17 @@
             groupBox2.TabIndex = 26;
             groupBox2.TabStop = false;
             // 
-            // panel1
+            // Barra
             // 
-            panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(btnMinimizar);
-            panel1.Controls.Add(btnCerrar);
-            panel1.Location = new Point(-1, -1);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1289, 51);
-            panel1.TabIndex = 27;
+            Barra.BackColor = Color.Teal;
+            Barra.Controls.Add(label7);
+            Barra.Controls.Add(btnMinimizar);
+            Barra.Controls.Add(btnCerrar);
+            Barra.Location = new Point(-1, -1);
+            Barra.Margin = new Padding(3, 4, 3, 4);
+            Barra.Name = "Barra";
+            Barra.Size = new Size(1289, 51);
+            Barra.TabIndex = 27;
             // 
             // label7
             // 
@@ -320,7 +320,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
             ClientSize = new Size(1283, 515);
-            Controls.Add(panel1);
+            Controls.Add(Barra);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(dvDatos);
@@ -333,8 +333,8 @@
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            Barra.ResumeLayout(false);
+            Barra.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
@@ -360,7 +360,7 @@
         private GroupBox groupBox2;
         private Label label6;
         private PictureBox pictureBox1;
-        private Panel panel1;
+        private Panel Barra;
         private Label label7;
         private PictureBox btnMinimizar;
         private PictureBox btnCerrar;

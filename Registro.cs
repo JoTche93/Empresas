@@ -1,16 +1,29 @@
 using System.Data;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
 using TestLogin.App_code;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace TestLogin
 {
     public partial class Registro : Form
     {
+
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HTCAPTION = 0x2;
+
+
         Conexion scn;
         public Registro()
         {
             InitializeComponent();
             scn = new Conexion();
+            Barra.MouseDown += new MouseEventHandler(Barra_MouseDown);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -80,6 +93,15 @@ namespace TestLogin
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Barra_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            }
         }
     }
 }
