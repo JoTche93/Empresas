@@ -64,5 +64,22 @@ namespace TestLogin
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Login Logear = new Login();
+            Logear.Show();
+            this.Hide();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -1026,7 +1026,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMinimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAWgAAABbCAYAAABefB9iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAEVBJREFUeF7t3XlsHFWeB/AOvrp9dRzHx+Sw4yRkkjgJIfd9ciQOh2FiQQZpoxFi
@@ -1106,7 +1106,7 @@
         IEe67Pt/oJRqLaryojYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAWgAAAFqCAYAAAA3LcDeAAAABGdBTUEAALGPC/xhBQAASWtJREFUeF7t
         nQl8XFd59kliW7JsExO2AM1m7ZIdhaXAV/q1KUu8abURraHQQMFtQw1SvMUJBUFLFyjJhxvHqLEj7Dgp

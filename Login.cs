@@ -74,9 +74,7 @@ namespace TestLogin
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            //Registro registrar = new Registro();
-           // registrar.Show();
-           // this.Hide();
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -104,6 +102,16 @@ namespace TestLogin
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
