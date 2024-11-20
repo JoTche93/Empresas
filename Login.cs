@@ -74,9 +74,7 @@ namespace TestLogin
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            //Registro registrar = new Registro();
-           // registrar.Show();
-           // this.Hide();
+            
         }
 
         private void Login_Load(object sender, EventArgs e)
