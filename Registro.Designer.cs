@@ -41,6 +41,7 @@
             txtPass = new TextBox();
             label5 = new Label();
             groupBox1 = new GroupBox();
+            pictureBox4 = new PictureBox();
             groupBox2 = new GroupBox();
             label6 = new Label();
             pictureBox1 = new PictureBox();
@@ -48,7 +49,9 @@
             label7 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
+            label8 = new Label();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -173,6 +176,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.CadetBlue;
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(pictureBox4);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(pictureBox1);
@@ -181,6 +186,16 @@
             groupBox1.Size = new Size(490, 434);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(3, 22);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(63, 45);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 27;
+            pictureBox4.TabStop = false;
             // 
             // groupBox2
             // 
@@ -265,6 +280,16 @@
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label8.Location = new Point(11, 70);
+            label8.Name = "label8";
+            label8.Size = new Size(47, 17);
+            label8.TabIndex = 28;
+            label8.Text = "Volver";
+            // 
             // Registro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -280,6 +305,7 @@
             Load += Registro_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -311,5 +337,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private GroupBox groupBox2;
+        private PictureBox pictureBox4;
+        private Label label8;
     }
 }
