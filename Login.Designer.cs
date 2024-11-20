@@ -37,7 +37,7 @@
             btnAceptar = new Button();
             pictureBox1 = new PictureBox();
             label6 = new Label();
-            panel1 = new Panel();
+            Barra = new Panel();
             label5 = new Label();
             btnMinimizar = new PictureBox();
             btnCerrar = new PictureBox();
@@ -45,7 +45,7 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
+            Barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -139,17 +139,17 @@
             label6.TabIndex = 23;
             label6.Text = "EMPOWER";
             // 
-            // panel1
+            // Barra
             // 
-            panel1.BackColor = Color.Teal;
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(btnMinimizar);
-            panel1.Controls.Add(btnCerrar);
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(490, 51);
-            panel1.TabIndex = 24;
+            Barra.BackColor = Color.Teal;
+            Barra.Controls.Add(label5);
+            Barra.Controls.Add(btnMinimizar);
+            Barra.Controls.Add(btnCerrar);
+            Barra.Location = new Point(0, 0);
+            Barra.Margin = new Padding(3, 4, 3, 4);
+            Barra.Name = "Barra";
+            Barra.Size = new Size(490, 51);
+            Barra.TabIndex = 24;
             // 
             // label5
             // 
@@ -229,7 +229,7 @@
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(label4);
-            Controls.Add(panel1);
+            Controls.Add(Barra);
             Controls.Add(label6);
             Controls.Add(pictureBox1);
             Controls.Add(btnAceptar);
@@ -245,8 +245,8 @@
             Text = "Login";
             Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            Barra.ResumeLayout(false);
+            Barra.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -265,7 +265,7 @@
         private Button btnAceptar;
         private PictureBox pictureBox1;
         private Label label6;
-        private Panel panel1;
+        private Panel Barra;
         private PictureBox btnCerrar;
         private PictureBox btnMinimizar;
         private Label label4;
