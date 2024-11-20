@@ -39,15 +39,15 @@
             label6 = new Label();
             panel1 = new Panel();
             label5 = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
             label4 = new Label();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
@@ -56,31 +56,29 @@
             // 
             txtRut.BackColor = Color.LightGray;
             txtRut.BorderStyle = BorderStyle.None;
-            txtRut.Location = new Point(121, 178);
-            txtRut.Margin = new Padding(3, 2, 3, 2);
+            txtRut.Location = new Point(138, 237);
             txtRut.Name = "txtRut";
             txtRut.RightToLeft = RightToLeft.No;
-            txtRut.Size = new Size(180, 16);
+            txtRut.Size = new Size(206, 20);
             txtRut.TabIndex = 2;
             // 
             // txtPass
             // 
             txtPass.BackColor = Color.LightGray;
             txtPass.BorderStyle = BorderStyle.None;
-            txtPass.Location = new Point(121, 232);
-            txtPass.Margin = new Padding(3, 2, 3, 2);
+            txtPass.Location = new Point(138, 309);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '*';
-            txtPass.Size = new Size(180, 16);
+            txtPass.Size = new Size(206, 20);
             txtPass.TabIndex = 4;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(121, 209);
+            label2.Location = new Point(138, 279);
             label2.Name = "label2";
-            label2.Size = new Size(100, 21);
+            label2.Size = new Size(123, 28);
             label2.TabIndex = 6;
             label2.Text = "Contraseña:";
             // 
@@ -88,9 +86,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(121, 155);
+            label1.Location = new Point(138, 207);
             label1.Name = "label1";
-            label1.Size = new Size(40, 21);
+            label1.Size = new Size(50, 28);
             label1.TabIndex = 5;
             label1.Text = "Rut:";
             // 
@@ -98,9 +96,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(157, 98);
+            label3.Location = new Point(179, 131);
             label3.Name = "label3";
-            label3.Size = new Size(111, 45);
+            label3.Size = new Size(141, 57);
             label3.TabIndex = 7;
             label3.Text = "Login";
             label3.Click += label3_Click;
@@ -112,10 +110,9 @@
             btnAceptar.FlatAppearance.BorderSize = 10;
             btnAceptar.FlatStyle = FlatStyle.Popup;
             btnAceptar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAceptar.Location = new Point(173, 267);
-            btnAceptar.Margin = new Padding(3, 2, 3, 2);
+            btnAceptar.Location = new Point(198, 356);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(82, 27);
+            btnAceptar.Size = new Size(94, 36);
             btnAceptar.TabIndex = 8;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -124,9 +121,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(285, 12);
+            pictureBox1.Location = new Point(326, 16);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(116, 110);
+            pictureBox1.Size = new Size(133, 147);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -134,10 +132,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Magneto", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(71, 53);
+            label6.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(81, 71);
             label6.Name = "label6";
-            label6.Size = new Size(252, 45);
+            label6.Size = new Size(277, 54);
             label6.TabIndex = 23;
             label6.Text = "EMPOWER";
             // 
@@ -145,51 +143,54 @@
             // 
             panel1.BackColor = Color.Teal;
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(btnMinimizar);
+            panel1.Controls.Add(btnCerrar);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(429, 38);
+            panel1.Size = new Size(490, 51);
             panel1.TabIndex = 24;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 9);
+            label5.Location = new Point(3, 12);
             label5.Name = "label5";
-            label5.Size = new Size(67, 16);
+            label5.Size = new Size(83, 19);
             label5.TabIndex = 27;
             label5.Text = "Empower";
             // 
-            // pictureBox3
+            // btnMinimizar
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(344, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(40, 38);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 26;
-            pictureBox3.TabStop = false;
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(393, 0);
+            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(46, 51);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnMinimizar.TabIndex = 26;
+            btnMinimizar.TabStop = false;
             // 
-            // pictureBox2
+            // btnCerrar
             // 
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(386, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 38);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
+            btnCerrar.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(441, 0);
+            btnCerrar.Margin = new Padding(3, 4, 3, 4);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(46, 51);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 25;
+            btnCerrar.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(131, 312);
+            label4.Location = new Point(150, 416);
             label4.Name = "label4";
-            label4.Size = new Size(161, 16);
+            label4.Size = new Size(205, 19);
             label4.TabIndex = 25;
             label4.Text = "¿Registrar Nuevo Usuario?";
             label4.Click += label4_Click;
@@ -197,9 +198,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(75, 155);
+            pictureBox4.Location = new Point(86, 207);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(40, 38);
+            pictureBox4.Size = new Size(46, 51);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 27;
             pictureBox4.TabStop = false;
@@ -208,19 +210,20 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(75, 209);
+            pictureBox5.Location = new Point(86, 279);
+            pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(40, 38);
+            pictureBox5.Size = new Size(46, 51);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 28;
             pictureBox5.TabStop = false;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
-            ClientSize = new Size(425, 349);
+            ClientSize = new Size(486, 465);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(label4);
@@ -235,7 +238,6 @@
             Controls.Add(txtRut);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Opacity = 0.95D;
             Text = "Login";
@@ -243,8 +245,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
@@ -262,8 +264,8 @@
         private PictureBox pictureBox1;
         private Label label6;
         private Panel panel1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox btnCerrar;
+        private PictureBox btnMinimizar;
         private Label label4;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;

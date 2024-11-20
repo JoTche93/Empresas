@@ -48,15 +48,15 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             label7 = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            btnMinimizar = new PictureBox();
+            btnCerrar = new PictureBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -253,8 +253,8 @@
             // 
             panel1.BackColor = Color.Teal;
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(btnMinimizar);
+            panel1.Controls.Add(btnCerrar);
             panel1.Location = new Point(1, -1);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
@@ -271,28 +271,28 @@
             label7.TabIndex = 27;
             label7.Text = "Empower Registro";
             // 
-            // pictureBox3
+            // btnMinimizar
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(463, 0);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(46, 51);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 26;
-            pictureBox3.TabStop = false;
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(463, 0);
+            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Size = new Size(46, 51);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnMinimizar.TabIndex = 26;
+            btnMinimizar.TabStop = false;
             // 
-            // pictureBox2
+            // btnCerrar
             // 
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(511, 0);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(46, 51);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
+            btnCerrar.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(511, 0);
+            btnCerrar.Margin = new Padding(3, 4, 3, 4);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(46, 51);
+            btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCerrar.TabIndex = 25;
+            btnCerrar.TabStop = false;
             // 
             // Registro
             // 
@@ -314,8 +314,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ResumeLayout(false);
         }
 
@@ -336,8 +336,8 @@
         private Label label6;
         private Panel panel1;
         private Label label7;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
+        private PictureBox btnMinimizar;
+        private PictureBox btnCerrar;
         private PictureBox pictureBox1;
         private GroupBox groupBox2;
         private PictureBox pictureBox4;
