@@ -232,9 +232,9 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtDir);
             groupBox1.Controls.Add(pictureBox1);
-            groupBox1.Location = new Point(-1, 42);
+            groupBox1.Location = new Point(2, 42);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(375, 336);
+            groupBox1.Size = new Size(372, 336);
             groupBox1.TabIndex = 25;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
