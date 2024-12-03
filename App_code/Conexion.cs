@@ -15,7 +15,7 @@ namespace TestLogin.App_code
         }
         public Conexion()
         {
-            this.con.ConnectionString = "Data Source = DESKTOP-M62L1VO\\SQLEXPRESS; Initial Catalog=BD_UCT;Integrated Security=True";
+            this.con.ConnectionString = "Data Source = DESKTOP-HGJTC01\\SQLEXPRESS; Initial Catalog=BD_UCT;Integrated Security=True";
 
         }
         public void conectar()

@@ -49,9 +49,9 @@
             groupBox4 = new GroupBox();
             label1 = new Label();
             txtRut = new TextBox();
-            btnGuardar = new Button();
+            btnActualizar = new Button();
             label3 = new Label();
-            txtDir = new TextBox();
+            txtDireccion = new TextBox();
             txtNombre = new TextBox();
             label8 = new Label();
             label9 = new Label();
@@ -248,9 +248,9 @@
             // 
             groupBox4.Controls.Add(label1);
             groupBox4.Controls.Add(txtRut);
-            groupBox4.Controls.Add(btnGuardar);
+            groupBox4.Controls.Add(btnActualizar);
             groupBox4.Controls.Add(label3);
-            groupBox4.Controls.Add(txtDir);
+            groupBox4.Controls.Add(txtDireccion);
             groupBox4.Controls.Add(txtNombre);
             groupBox4.Controls.Add(label8);
             groupBox4.Controls.Add(label9);
@@ -283,18 +283,19 @@
             txtRut.Size = new Size(225, 18);
             txtRut.TabIndex = 1;
             // 
-            // btnGuardar
+            // btnActualizar
             // 
-            btnGuardar.BackColor = Color.LightGray;
-            btnGuardar.FlatStyle = FlatStyle.Popup;
-            btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            btnGuardar.Location = new Point(6, 204);
-            btnGuardar.Margin = new Padding(3, 2, 3, 2);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(127, 25);
-            btnGuardar.TabIndex = 8;
-            btnGuardar.Text = "Actualizar Datos";
-            btnGuardar.UseVisualStyleBackColor = false;
+            btnActualizar.BackColor = Color.LightGray;
+            btnActualizar.FlatStyle = FlatStyle.Popup;
+            btnActualizar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnActualizar.Location = new Point(6, 204);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(127, 25);
+            btnActualizar.TabIndex = 8;
+            btnActualizar.Text = "Actualizar Datos";
+            btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // label3
             // 
@@ -306,15 +307,15 @@
             label3.TabIndex = 2;
             label3.Text = "Nombre:";
             // 
-            // txtDir
+            // txtDireccion
             // 
-            txtDir.BackColor = Color.LightGray;
-            txtDir.BorderStyle = BorderStyle.None;
-            txtDir.Location = new Point(8, 174);
-            txtDir.Margin = new Padding(3, 2, 3, 2);
-            txtDir.Name = "txtDir";
-            txtDir.Size = new Size(225, 18);
-            txtDir.TabIndex = 7;
+            txtDireccion.BackColor = Color.LightGray;
+            txtDireccion.BorderStyle = BorderStyle.None;
+            txtDireccion.Location = new Point(8, 174);
+            txtDireccion.Margin = new Padding(3, 2, 3, 2);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(225, 18);
+            txtDireccion.TabIndex = 7;
             // 
             // txtNombre
             // 
@@ -415,9 +416,9 @@
         private GroupBox groupBox4;
         private Label label1;
         private TextBox txtRut;
-        private Button btnGuardar;
+        private Button btnActualizar;
         private Label label3;
-        private TextBox txtDir;
+        private TextBox txtDireccion;
         private TextBox txtNombre;
         private Label label8;
         private Label label9;
