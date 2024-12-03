@@ -47,6 +47,7 @@ namespace TestLogin
 
                 cmd.Connection = scn.Con;
                 scn.Con.Open();
+
                 SqlDataAdapter usuario = new SqlDataAdapter();
                 usuario.SelectCommand = cmd;
                 #region Paso 2 Llamada a Procedimiento Almacenado
