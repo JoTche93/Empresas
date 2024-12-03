@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestLogin.App_code
 {
-    public partial class Usuario : Form
+    public partial class Usuarios : Form
     {
-        public Usuario()
+        public Usuarios()
         {
             InitializeComponent();
         }
