@@ -46,6 +46,16 @@
             label4 = new Label();
             dataGridView1 = new DataGridView();
             label5 = new Label();
+            groupBox4 = new GroupBox();
+            label1 = new Label();
+            txtRut = new TextBox();
+            btnGuardar = new Button();
+            label3 = new Label();
+            txtDir = new TextBox();
+            txtNombre = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
+            txtApellido = new TextBox();
             Barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
@@ -56,6 +66,7 @@
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // Barra
@@ -105,9 +116,9 @@
             groupBox2.Controls.Add(ButtonPerfil);
             groupBox2.Controls.Add(ButtonHistorial);
             groupBox2.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(26, 146);
+            groupBox2.Location = new Point(26, 133);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(199, 123);
+            groupBox2.Size = new Size(199, 104);
             groupBox2.TabIndex = 27;
             groupBox2.TabStop = false;
             groupBox2.Text = "Opciones";
@@ -136,7 +147,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 55);
+            label6.Location = new Point(283, 65);
             label6.Name = "label6";
             label6.Size = new Size(222, 42);
             label6.TabIndex = 28;
@@ -145,7 +156,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(183, 18);
+            pictureBox1.Location = new Point(463, 28);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 100);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -189,9 +200,9 @@
             groupBox3.Controls.Add(pictureBox5);
             groupBox3.Controls.Add(label4);
             groupBox3.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox3.Location = new Point(295, 146);
+            groupBox3.Location = new Point(295, 243);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(559, 227);
+            groupBox3.Size = new Size(559, 234);
             groupBox3.TabIndex = 35;
             groupBox3.TabStop = false;
             // 
@@ -220,25 +231,138 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(6, 63);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(549, 162);
+            dataGridView1.Size = new Size(549, 166);
             dataGridView1.TabIndex = 32;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Mongolian Baiti", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(353, 76);
+            label5.Location = new Point(345, 147);
             label5.Name = "label5";
             label5.Size = new Size(199, 40);
             label5.TabIndex = 36;
             label5.Text = "Bienvenido";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(label1);
+            groupBox4.Controls.Add(txtRut);
+            groupBox4.Controls.Add(btnGuardar);
+            groupBox4.Controls.Add(label3);
+            groupBox4.Controls.Add(txtDir);
+            groupBox4.Controls.Add(txtNombre);
+            groupBox4.Controls.Add(label8);
+            groupBox4.Controls.Add(label9);
+            groupBox4.Controls.Add(txtApellido);
+            groupBox4.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold);
+            groupBox4.Location = new Point(26, 243);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(246, 234);
+            groupBox4.TabIndex = 37;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Editar Datos Perfil";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label1.Location = new Point(6, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(33, 17);
+            label1.TabIndex = 0;
+            label1.Text = "Rut:";
+            // 
+            // txtRut
+            // 
+            txtRut.BackColor = Color.LightGray;
+            txtRut.BorderStyle = BorderStyle.None;
+            txtRut.Location = new Point(6, 36);
+            txtRut.Margin = new Padding(3, 2, 3, 2);
+            txtRut.Name = "txtRut";
+            txtRut.Size = new Size(225, 18);
+            txtRut.TabIndex = 1;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = Color.LightGray;
+            btnGuardar.FlatStyle = FlatStyle.Popup;
+            btnGuardar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnGuardar.Location = new Point(6, 204);
+            btnGuardar.Margin = new Padding(3, 2, 3, 2);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(127, 25);
+            btnGuardar.TabIndex = 8;
+            btnGuardar.Text = "Actualizar Datos";
+            btnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label3.Location = new Point(8, 61);
+            label3.Name = "label3";
+            label3.Size = new Size(62, 17);
+            label3.TabIndex = 2;
+            label3.Text = "Nombre:";
+            // 
+            // txtDir
+            // 
+            txtDir.BackColor = Color.LightGray;
+            txtDir.BorderStyle = BorderStyle.None;
+            txtDir.Location = new Point(8, 174);
+            txtDir.Margin = new Padding(3, 2, 3, 2);
+            txtDir.Name = "txtDir";
+            txtDir.Size = new Size(225, 18);
+            txtDir.TabIndex = 7;
+            // 
+            // txtNombre
+            // 
+            txtNombre.BackColor = Color.LightGray;
+            txtNombre.BorderStyle = BorderStyle.None;
+            txtNombre.Location = new Point(8, 80);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(225, 18);
+            txtNombre.TabIndex = 3;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label8.Location = new Point(4, 155);
+            label8.Name = "label8";
+            label8.Size = new Size(66, 17);
+            label8.TabIndex = 6;
+            label8.Text = "Dirección";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label9.Location = new Point(6, 107);
+            label9.Name = "label9";
+            label9.Size = new Size(64, 17);
+            label9.TabIndex = 4;
+            label9.Text = "Apellido:";
+            // 
+            // txtApellido
+            // 
+            txtApellido.BackColor = Color.LightGray;
+            txtApellido.BorderStyle = BorderStyle.None;
+            txtApellido.Location = new Point(8, 126);
+            txtApellido.Margin = new Padding(3, 2, 3, 2);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(225, 18);
+            txtApellido.TabIndex = 5;
             // 
             // Usuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
-            ClientSize = new Size(866, 385);
+            ClientSize = new Size(866, 488);
+            Controls.Add(groupBox4);
             Controls.Add(label5);
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
@@ -263,6 +387,8 @@
             groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -286,5 +412,15 @@
         private PictureBox pictureBox5;
         private Label label4;
         private Label label5;
+        private GroupBox groupBox4;
+        private Label label1;
+        private TextBox txtRut;
+        private Button btnGuardar;
+        private Label label3;
+        private TextBox txtDir;
+        private TextBox txtNombre;
+        private Label label8;
+        private Label label9;
+        private TextBox txtApellido;
     }
 }
