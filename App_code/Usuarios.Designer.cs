@@ -42,9 +42,9 @@
             CerrarSesion = new Label();
             groupBox1 = new GroupBox();
             groupBox3 = new GroupBox();
+            dataGridView1 = new DataGridView();
             pictureBox5 = new PictureBox();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
             label5 = new Label();
             groupBox4 = new GroupBox();
             label1 = new Label();
@@ -64,8 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             groupBox4.SuspendLayout();
             SuspendLayout();
             // 
@@ -206,6 +206,14 @@
             groupBox3.TabIndex = 35;
             groupBox3.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(6, 63);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(549, 166);
+            dataGridView1.TabIndex = 32;
+            // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
@@ -226,19 +234,11 @@
             label4.TabIndex = 0;
             label4.Text = "Ver/Editar Perfil";
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 63);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(549, 166);
-            dataGridView1.TabIndex = 32;
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Mongolian Baiti", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(345, 147);
+            label5.Location = new Point(345, 133);
             label5.Name = "label5";
             label5.Size = new Size(199, 40);
             label5.TabIndex = 36;
@@ -385,8 +385,8 @@
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ResumeLayout(false);
