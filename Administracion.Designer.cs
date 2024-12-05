@@ -51,6 +51,7 @@
             label7 = new Label();
             btnMinimizar = new PictureBox();
             btnCerrar = new PictureBox();
+            U = new Label();
             ((System.ComponentModel.ISupportInitialize)dvDatos).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -257,6 +258,7 @@
             // groupBox2
             // 
             groupBox2.BackColor = Color.DarkSlateGray;
+            groupBox2.Controls.Add(U);
             groupBox2.Controls.Add(btnEditar);
             groupBox2.Controls.Add(btnEliminar);
             groupBox2.Location = new Point(434, 376);
@@ -314,6 +316,16 @@
             btnCerrar.TabStop = false;
             btnCerrar.Click += btnCerrar_Click;
             // 
+            // U
+            // 
+            U.AutoSize = true;
+            U.Location = new Point(818, 102);
+            U.Name = "U";
+            U.Size = new Size(19, 20);
+            U.TabIndex = 25;
+            U.Text = "U";
+            U.Click += U_Click;
+            // 
             // Administracion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -333,6 +345,7 @@
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             Barra.ResumeLayout(false);
             Barra.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
@@ -364,5 +377,6 @@
         private Label label7;
         private PictureBox btnMinimizar;
         private PictureBox btnCerrar;
+        private Label U;
     }
 }

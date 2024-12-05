@@ -41,6 +41,8 @@ namespace TestLogin
             SqlDataReader dr = null;
             string[] rut = txtRut.Text.Split('-');
 
+            
+
             try
             {
                 SqlCommand cmd = new SqlCommand();

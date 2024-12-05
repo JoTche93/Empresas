@@ -227,5 +227,11 @@ namespace TestLogin
             }
         }
 
+        private void U_Click(object sender, EventArgs e)
+        {
+            Usuarios user = new Usuarios();
+            user.Show();
+            this.Hide();
+        }
     }
 }

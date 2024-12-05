@@ -65,6 +65,7 @@ namespace TestLogin
 
                 Login login = new Login();
                 login.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
